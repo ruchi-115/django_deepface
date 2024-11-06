@@ -1,0 +1,110 @@
+<!-- home/templates/home/homepage.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFace - Detect Deepfake</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">DeepFace</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="login-btn">Login</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="main-content">
+            <h1>Detect deep fake in your pictures and audio</h1>
+            <button class="upload-btn">Upload your file here</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Detect deep fake easily in seconds</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Upload instantly</h3>
+                <p>Upload your audio and pictures in one click to start detection.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Crop faces automatically</h3>
+                <p>Automatically focuses on faces to enhance detection accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Easy to use</h3>
+                <p>Designed for intuitive user experience, providing results in seconds.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analysis Section -->
+    <section class="analysis-section">
+        <h2>Analyse your audio and picture at one place</h2>
+        <div class="analysis-features">
+            <div class="analysis-item">
+                <h3>Artifact detection</h3>
+                <p>Detect unnatural facial movements and audio anomalies.</p>
+            </div>
+            <div class="analysis-item">
+                <h3>AI-Powered Pattern Recognition</h3>
+                <p>Utilizes AI algorithms to detect pattern discrepancies.</p>
+            </div>
+            <div class="analysis-item">
+                <h3>Fake image analysis</h3>
+                <p>Applies image processing to detect fake patterns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features Section -->
+    <section class="additional-features">
+        <h2>Features</h2>
+        <div class="feature-icons">
+            <div class="icon-card">Real-Time Deep Fake Detection</div>
+            <div class="icon-card">Comprehensive Media Analysis</div>
+            <div class="icon-card">Multi-Format Support</div>
+            <div class="icon-card">User-Friendly Interface</div>
+            <div class="icon-card">Batch Processing</div>
+            <div class="icon-card">Privacy and Data Security</div>
+            <div class="icon-card">Detailed Reporting and Insights</div>
+            <div class="icon-card">Mobile Compatibility</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Features</h3>
+                <p>Explore all features here.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <p>Find all information here.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <p>Get support here.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Download</h3>
+                <p>Download the app here.</p>
+            </div>
+        </div>
+        <p class="footer-note">© 2024 All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
