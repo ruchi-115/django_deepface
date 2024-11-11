@@ -1,0 +1,78 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <p>Hi {{ user.username }}!</p>
+    <form action="{% url 'logout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Log Out</button>
+      </form>
+{% else %}
+    <p>You are not logged in</p>
+    <a href="{% url 'login' %}">Log In</a>
+{% endif %}
+
+<!-- Main Section -->
+<section class="main-section">
+    <div class="main-content">
+        <h1>Detect deep fake in your pictures and audio</h1>
+        <button class="upload-btn">Upload your file here</button>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <h2>Detect deep fake easily in seconds</h2>
+    <div class="feature-cards">
+        <div class="feature-card">
+            <h3>Upload instantly</h3>
+            <p>Upload your audio and pictures in one click to start detection.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Crop faces automatically</h3>
+            <p>Automatically focuses on faces to enhance detection accuracy.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Easy to use</h3>
+            <p>Designed for intuitive user experience, providing results in seconds.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Analysis Section -->
+<section class="analysis-section">
+    <h2>Analyze your audio and picture in one place</h2>
+    <div class="analysis-features">
+        <div class="analysis-item">
+            <h3>Artifact detection</h3>
+            <p>Detect unnatural facial movements and audio anomalies.</p>
+        </div>
+        <div class="analysis-item">
+            <h3>AI-Powered Pattern Recognition</h3>
+            <p>Utilizes AI algorithms to detect pattern discrepancies.</p>
+        </div>
+        <div class="analysis-item">
+            <h3>Fake image analysis</h3>
+            <p>Applies image processing to detect fake patterns.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Features Section -->
+<section class="additional-features">
+    <h2>Features</h2>
+    <div class="feature-icons">
+        <div class="icon-card">Real-Time Deep Fake Detection</div>
+        <div class="icon-card">Comprehensive Media Analysis</div>
+        <div class="icon-card">Multi-Format Support</div>
+        <div class="icon-card">User-Friendly Interface</div>
+        <div class="icon-card">Batch Processing</div>
+        <div class="icon-card">Privacy and Data Security</div>
+        <div class="icon-card">Detailed Reporting and Insights</div>
+        <div class="icon-card">Mobile Compatibility</div>
+    </div>
+</section>
+{% endblock %}
