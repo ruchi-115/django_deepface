@@ -9,7 +9,7 @@
         <div class="col-md-5 p-lg-5 mx-auto my-5 bg-light border border-dark rounded-top rounded-bottom">
           <h1 class="display-4 fw-normal">Detect Deep Fake in Your Pictures and Audio</h1>
           <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-          <a class="btn btn-outline-secondary" href="#">Get Started</a>
+          <a class="btn btn-outline-secondary" href="{% url 'photo_deepfake' %}">Get Started</a>
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -145,10 +145,10 @@
 </div>
 
 
-<div class="container my-5">
+<div class="container my-5 text-dark">
     <!-- Section Heading -->
     <h2 class="text-center font-weight-bold mb-4">Other ways to spot deepfakes</h2>
-    <p class="text-center text-muted mb-5">
+    <p class="text-center text-dark mb-5">
         Deepfakes are becoming higher in quality while being easier and cheaper to make. It consequently becomes harder to spot deepfakes with the naked eye. However, at this moment you can still look for several typical graphic inconsistencies (called artefacts) in deepfakes. The typical artefacts to look for are listed below.
     </p>
 
@@ -157,7 +157,7 @@
         <!-- Left Side Single Image -->
         <div class="col-md-6 text-center">
             <div class="image-container original border rounded" alt="Deepfake Example"></div>
-            <p class="mt-2 text-muted">Original Image with Localized Face, Cropped Face, Heatmap, and Overlay</p>
+            <p class="mt-2 text-dark">Original Image with Localized Face, Cropped Face, Heatmap, and Overlay</p>
         </div>
 
         <!-- Right Side Cards -->
@@ -165,7 +165,7 @@
             <div class="card border-0 shadow-sm mb-4">
                 <div class="card-body">
                     <h5 class="card-title font-weight-bold">Colour Transition</h5>
-                    <p class="card-text text-muted">
+                    <p class="card-text text-dark">
                         In neural puppetry and faceswap deepfakes, the face is manipulated. Sometimes a hard color transition can be seen on the edges of the area the deepfake software manipulated.
                     </p>
                 </div>
@@ -173,7 +173,7 @@
             <div class="card border-0 shadow-sm mb-4">
                 <div class="card-body">
                     <h5 class="card-title font-weight-bold">Accessories</h5>
-                    <p class="card-text text-muted">
+                    <p class="card-text text-dark">
                         Items like glasses might look convincing at first, but when looked closer, might actually contain some artefacts.
                     </p>
                 </div>
@@ -181,7 +181,7 @@
             <div class="card border-0 shadow-sm mb-4">
                 <div class="card-body">
                     <h5 class="card-title font-weight-bold">Blurry Background or Context</h5>
-                    <p class="card-text text-muted">
+                    <p class="card-text text-dark">
                         StyleGAN deepfakes are good in making faces, but bad at creating context that makes sense. Check the background and clothing, for example, to see if these make any sense.
                     </p>
                 </div>
@@ -189,7 +189,7 @@
             <div class="card border-0 shadow-sm mb-4">
                 <div class="card-body">
                     <h5 class="card-title font-weight-bold">Unnatural Looking Eyes</h5>
-                    <p class="card-text text-muted">
+                    <p class="card-text text-dark">
                         Eyes are rather hard to deepfake due to their complexity. Check if the reflections in the eyes have the same angle. Does the person in the video blink? Are the irises of both eyes equally large?
                     </p>
                 </div>
@@ -209,7 +209,7 @@
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <h3 class="card-title">Upload Instantly</h3>
-                        <p class="card-text">Upload your audio and pictures in one click to start detection.</p>
+                        <p class="text-dark">Upload your audio and pictures in one click to start detection.</p>
                     </div>
                 </div>
             </div>
@@ -217,7 +217,7 @@
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <h3 class="card-title">Crop Faces Automatically</h3>
-                        <p class="card-text">Automatically focuses on faces to enhance detection accuracy.</p>
+                        <p class="text-dark">Automatically focuses on faces to enhance detection accuracy.</p>
                     </div>
                 </div>
             </div>
@@ -225,48 +225,94 @@
                 <div class="card shadow-sm">
                     <div class="card-body">
                         <h3 class="card-title">Easy to Use</h3>
-                        <p class="card-text">Designed for intuitive user experience, providing results in seconds.</p>
+                        <p class="text-dark">Designed for intuitive user experience, providing results in seconds.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<div class="container my-5">
+    <!-- Section Heading and Description -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="font-weight-bold">Detect deep fake easily in seconds</h2>
+            <h5>Crop faces automatically</h5>
+            <p>
+                The automatic face-cropping feature in the Deep Fake Detector simplifies the analysis process by
+                quickly identifying and isolating faces within videos. This ensures that the focus remains on key
+                areas, enhancing detection accuracy and saving users time. It’s a smart, efficient way to streamline
+                deep fake identification.
+            </p>
+            <p>
+                The Deep Fake Detector is incredibly easy to use, featuring an intuitive design that allows users to
+                quickly upload and analyze videos with minimal effort. Clear instructions and a straightforward
+                interface make the process accessible even for those with limited technical knowledge, ensuring a
+                hassle-free experience for everyone.
+            </p>
+        </div>
+    </div>
 
-<!-- Analysis Section -->
-<section class="analysis-section py-5 bg-light">
-    <div class="container text-center">
-        <h2 class="mb-4">Analyze Your Audio and Picture in One Place</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Artifact Detection</h3>
-                        <p class="card-text">Detect unnatural facial movements and audio anomalies.</p>
+    <!-- Image and Analysis Cards Section -->
+    <div class="row mb-5">
+        <!-- Left Side Image Backgrounds -->
+        <div class="col-md-6 mb-4">
+            <div class="bg-image-container bg-face-analysis mb-4"></div>
+            <div class="bg-image-container bg-audio-analysis"></div>
+        </div>
+
+        <!-- Right Side Analysis Descriptions -->
+        <div class="col-md-6">
+            <h3>Analyse your audio and picture at one place</h3>
+            
+            <div class="card border-0 shadow-sm mb-3">
+                <div class="card-body d-flex">
+                    <div class="icon mr-3">
+                        <span class="badge badge-light text-secondary p-3 rounded-circle">AI</span>
+                    </div>
+                    <div>
+                        <h5 class="card-title mb-1">Artifact detection</h5>
+                        <p class="text-dark">
+                            Identifying inconsistencies such as unnatural facial movements in videos, audio anomalies like
+                            irregular pitch or intonation, and visual artifacts like pixelation or unnatural lighting in images,
+                            which are common in deep fakes.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">AI-Powered Pattern Recognition</h3>
-                        <p class="card-text">Utilizes AI algorithms to detect pattern discrepancies.</p>
+
+            <div class="card border-0 shadow-sm mb-3">
+                <div class="card-body d-flex">
+                    <div class="icon mr-3">
+                        <span class="badge badge-light text-secondary p-3 rounded-circle">AI</span>
+                    </div>
+                    <div>
+                        <h5 class="card-title mb-1">AI-Powered Pattern Recognition</h5>
+                        <p class="text-dark">
+                            Utilizing advanced machine learning models to detect subtle discrepancies in patterns,
+                            whether in speech cadence, image textures, or video frames, that are often overlooked by deep
+                            fake generation techniques.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Fake Image Analysis</h3>
-                        <p class="card-text">Applies image processing to detect fake patterns.</p>
+
+            <div class="card border-0 shadow-sm mb-3">
+                <div class="card-body d-flex">
+                    <div class="icon mr-3">
+                        <span class="badge badge-light text-secondary p-3 rounded-circle">AI</span>
+                    </div>
+                    <div>
+                        <h5 class="card-title mb-1">Fake image analysis</h5>
+                        <p class="text-dark" style="color:rgba(14, 10, 10, 0.6)">
+                            Applying image processing techniques to analyze the deep fake portion of the given user image.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-<!-- Additional Features Section -->
+</div>
 <section class="additional-features py-5 bg-dark">
     <div class="container text-center">
         <h2 class="mb-4 text-white">Features</h2>
@@ -314,89 +360,42 @@
         </div>
     </div>
 </section>
-
-<div class="container my-5">
-    <!-- Section Heading and Description -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <h2 class="font-weight-bold">Detect deep fake easily in seconds</h2>
-            <p>Upload your audio and pictures in one click in upload button and have patience for the Kavach to work for you.</p>
-            <h5>Crop faces automatically</h5>
-            <p>
-                The automatic face-cropping feature in the Deep Fake Detector simplifies the analysis process by
-                quickly identifying and isolating faces within videos. This ensures that the focus remains on key
-                areas, enhancing detection accuracy and saving users time. It’s a smart, efficient way to streamline
-                deep fake identification.
-            </p>
-            <p>
-                The Deep Fake Detector is incredibly easy to use, featuring an intuitive design that allows users to
-                quickly upload and analyze videos with minimal effort. Clear instructions and a straightforward
-                interface make the process accessible even for those with limited technical knowledge, ensuring a
-                hassle-free experience for everyone.
-            </p>
-        </div>
-    </div>
-
-    <!-- Image and Analysis Cards Section -->
-    <div class="row mb-5">
-        <!-- Left Side Image Backgrounds -->
-        <div class="col-md-6 mb-4">
-            <div class="bg-image-container bg-face-analysis mb-4"></div>
-            <div class="bg-image-container bg-audio-analysis"></div>
-        </div>
-
-        <!-- Right Side Analysis Descriptions -->
-        <div class="col-md-6">
-            <h3>Analyse your audio and picture at one place</h3>
-            
-            <div class="card border-0 shadow-sm mb-3">
-                <div class="card-body d-flex">
-                    <div class="icon mr-3">
-                        <span class="badge badge-light text-secondary p-3 rounded-circle">AI</span>
-                    </div>
-                    <div>
-                        <h5 class="card-title mb-1">Artifact detection</h5>
-                        <p class="card-text text-muted">
-                            Identifying inconsistencies such as unnatural facial movements in videos, audio anomalies like
-                            irregular pitch or intonation, and visual artifacts like pixelation or unnatural lighting in images,
-                            which are common in deep fakes.
-                        </p>
+<!-- Analysis Section -->
+<section class="analysis-section py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Analyze Your Audio and Picture in One Place</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Artifact Detection</h3>
+                        <p class="text-dark">Detect unnatural facial movements and audio anomalies.</p>
                     </div>
                 </div>
             </div>
-
-            <div class="card border-0 shadow-sm mb-3">
-                <div class="card-body d-flex">
-                    <div class="icon mr-3">
-                        <span class="badge badge-light text-secondary p-3 rounded-circle">AI</span>
-                    </div>
-                    <div>
-                        <h5 class="card-title mb-1">AI-Powered Pattern Recognition</h5>
-                        <p class="card-text text-muted">
-                            Utilizing advanced machine learning models to detect subtle discrepancies in patterns,
-                            whether in speech cadence, image textures, or video frames, that are often overlooked by deep
-                            fake generation techniques.
-                        </p>
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">AI-Powered Pattern Recognition</h3>
+                        <p class="text-dark">Utilizes AI algorithms to detect pattern discrepancies.</p>
                     </div>
                 </div>
             </div>
-
-            <div class="card border-0 shadow-sm mb-3">
-                <div class="card-body d-flex">
-                    <div class="icon mr-3">
-                        <span class="badge badge-light text-secondary p-3 rounded-circle">AI</span>
-                    </div>
-                    <div>
-                        <h5 class="card-title mb-1">Fake image analysis</h5>
-                        <p class="card-text text-muted">
-                            Applying image processing techniques to analyze the deep fake portion of the given user image.
-                        </p>
+            <div class="col-md-4 mb-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Fake Image Analysis</h3>
+                        <p class="text-dark">Applies image processing to detect fake patterns using machine learning models.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<!-- Additional Features Section -->
+
+
 
 
 
